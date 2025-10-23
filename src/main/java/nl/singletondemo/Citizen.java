@@ -1,11 +1,15 @@
 package nl.singletondemo;
 
 public class Citizen {
-    String firstName;
-    int age;
+    private String firstName;
+    private int age;
 
-    Citizen(){
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
 
+    public String getFirstName() {
+        return firstName;
     }
 
     public void setAge(int age) {
@@ -14,14 +18,6 @@ public class Citizen {
 
     public int getAge() {
         return age;
-    }
-
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
-    }
-
-    public String getFirstName() {
-        return firstName;
     }
 
     public void speak(){

@@ -1,6 +1,6 @@
 package nl.singletondemo;
 
-public class King extends Citizen {
+public class King extends Citizen{
     private static King instance; // <- lazy initialization
     // private static King instance = new King(); <- greedy initialization
 
@@ -13,8 +13,7 @@ public class King extends Citizen {
         System.out.println("You all exist to serve me!");
     }
 
-
-    // Lazy initialization
+    //Lazy initialization
     public static King getInstance(){
         if (instance == null){
             instance = new King();
@@ -24,10 +23,7 @@ public class King extends Citizen {
 
     // Greedy initialization
 //    public static King getInstance(){
-//
 //        return instance;
 //    }
-
-
-
 }
+
